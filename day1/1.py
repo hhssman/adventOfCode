@@ -18,4 +18,5 @@ if __name__ == '__main__':
         numbers = []
         for line in file:
             numbers.append(int(line))
-        print(slideInc(numbers))
+        print("PART1: " + str(inc(numbers)))
+        print("PART2: " + str(slideInc(numbers)))

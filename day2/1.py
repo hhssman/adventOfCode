@@ -40,5 +40,5 @@ def nav2(place):
 if __name__ == '__main__':
     with open("day2\\input1.txt") as f:
         place = f.read().split("\n")
-        print(nav(place))
-        print(nav2(place))
+        print("PART1: "+ str(nav(place)))
+        print("PART2: "+ str(nav2(place)))
