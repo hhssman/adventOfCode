@@ -33,7 +33,7 @@ def nav2(place):
                 y += (command[1]*aim)
             case 'down':
                 aim += command[1]
-            case  'up':
+            case 'up':
                 aim -= command[1]
     return x*y
 
