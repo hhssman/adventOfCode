@@ -25,7 +25,7 @@ def plotLine(graph, line):
             else:
                 for x in range(0, line[1][0] - line[0][0]+1):
                     graph[line[0][0]+x][line[0][1]-x] += 1  
-        else:
+        else: # it is a diagonal line. I had way more truble with this then I should
             if line[0][1] < line[1][1]:
                 for x in range(line[0][0] - line[1][0]+1):
                     graph[line[0][0]-x][line[0][1]+x] += 1
@@ -50,7 +50,7 @@ if __name__ == '__main__':
             for x in line:
                 if x > 1:
                     count += 1
-        #print(count)
+        print("PART1: " + str(count))
         #graph290 = np.flip(np.rot90(graph2, 3),1)
         #print(graph290)
         count2 = 0
@@ -58,4 +58,4 @@ if __name__ == '__main__':
             for x in line:
                 if x > 1:
                     count2 += 1
-        print(count2)
+        print("PART2: " + str(count2))
